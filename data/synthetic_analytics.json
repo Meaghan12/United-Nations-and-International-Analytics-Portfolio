@@ -1,0 +1,54 @@
+{
+  "_meta": {
+    "description": "Pre-computed analytics metrics for the synthetic demonstration dataset.",
+    "dataset": "8 synthetic fictional cases — NOT real case data",
+    "warning": "SYNTHETIC DEMONSTRATION DATASET ONLY. These figures do not represent real caseloads, populations, or outcomes."
+  },
+  "total_cases": 8,
+  "routing_distribution": {
+    "URGENT_REVIEW": 1,
+    "PRIORITY_REVIEW": 2,
+    "READY_FOR_REVIEW": 1,
+    "NEED_INFO": 2,
+    "OTHER_SUPPORT": 1,
+    "NO_ACTION_RECOMMENDED": 1
+  },
+  "indicator_category_frequency": {
+    "document_confiscation": 3,
+    "restriction_of_movement": 3,
+    "coercion_threats": 3,
+    "wage_control_withholding": 4,
+    "debt_recruitment_pressure": 3,
+    "isolation": 2,
+    "inability_to_leave_employment": 3,
+    "deception_regarding_work": 1,
+    "dependency_control": 1,
+    "violence_threat_of_violence": 1,
+    "unsafe_accommodation": 0,
+    "exploitation_of_vulnerability": 0
+  },
+  "cases_requiring_additional_information": 2,
+  "cases_with_immediate_safety_trigger": 1,
+  "average_indicators_per_case": 3.25,
+  "cases_with_zero_indicators": 3,
+  "human_override_rate_demo": 0.15,
+  "referral_categories_frequency": {
+    "specialized_trafficking_support": 3,
+    "emergency_safeguarding_review": 2,
+    "legal_assistance": 4,
+    "immigration_legal_status": 2,
+    "housing_shelter_support": 2,
+    "healthcare": 1,
+    "psychosocial_support": 2,
+    "labour_rights_support": 3,
+    "financial_assistance": 3,
+    "case_management_follow_up": 8
+  },
+  "severity_distribution": {
+    "URGENT": 1,
+    "HIGH": 1,
+    "MODERATE": 2,
+    "LOW": 1,
+    "NONE": 3
+  }
+}

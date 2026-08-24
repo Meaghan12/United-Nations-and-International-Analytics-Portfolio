@@ -1,0 +1,76 @@
+{
+  "_meta": {
+    "description": "Pre-computed LLM responses for demo mode. Allows the application to run without an OpenAI API key.",
+    "generated_for": "Synthetic demonstration dataset only",
+    "prompt_version": "1.0.0",
+    "note": "These responses were generated using GPT-4o-mini with the constrained prompts in models/prompts.py and reviewed for compliance with the prohibited-terms policy."
+  },
+
+  "CASE-001": {
+    "indicator_hits": [
+      {"category": "document_confiscation", "label": "Passport retained by farm supervisor since arrival", "confidence": "REPORTED"},
+      {"category": "wage_control_withholding", "label": "Wages lower than contract; arbitrary deductions for accommodation and meals; no payslips", "confidence": "REPORTED"},
+      {"category": "coercion_threats", "label": "Threatened with immigration report if they complain or attempt to leave", "confidence": "REPORTED"},
+      {"category": "debt_recruitment_pressure", "label": "Recruitment fee of approximately $3,500 paid before departure; additional fees claimed", "confidence": "REPORTED"},
+      {"category": "restriction_of_movement", "label": "Workers transported by employer; must request permission to leave property", "confidence": "REPORTED"},
+      {"category": "isolation", "label": "Phone use monitored during shared accommodation time; limited independent communication", "confidence": "REPORTED"},
+      {"category": "dependency_control", "label": "Employer-controlled accommodation for group of twelve workers", "confidence": "REPORTED"}
+    ],
+    "evidence_summary": "The individual reports several indicators that warrant careful human review. Reported indicators include document confiscation, with the individual's passport retained by a supervisor since arrival. Wage irregularities are reported, including deductions inconsistent with the original contract and absence of payslips. The individual further reports having been threatened with immigration-related consequences if they complain or attempt to leave the situation. A recruitment debt of approximately $3,500 is reported, along with claims of additional fees. Restriction of movement and monitored communication are also indicated. Human review by a qualified practitioner is required before any action is taken; this summary does not constitute a determination that trafficking has occurred."
+  },
+
+  "CASE-002": {
+    "indicator_hits": [],
+    "evidence_summary": "Insufficient information has been provided to identify specific indicators or prepare a meaningful evidence summary. The individual has indicated that their employer 'treats them badly' and that they need help, but no details have been shared about the nature of the concerns. Clarifying questions have been generated to gather the information needed for a substantive assessment. A human reviewer should determine how best to engage with the individual to gather further information in a safe and sensitive manner."
+  },
+
+  "CASE-003": {
+    "indicator_hits": [
+      {"category": "restriction_of_movement", "label": "Locked in accommodation; not permitted to leave without employer present", "confidence": "REPORTED"},
+      {"category": "violence_threat_of_violence", "label": "Physically threatened; told they will be harmed if they attempt to leave", "confidence": "REPORTED"},
+      {"category": "document_confiscation", "label": "Passport and phone held by employer", "confidence": "REPORTED"},
+      {"category": "wage_control_withholding", "label": "No wages received for three months", "confidence": "REPORTED"},
+      {"category": "isolation", "label": "Unable to contact anyone; used neighbour's phone for this contact", "confidence": "REPORTED"},
+      {"category": "inability_to_leave_employment", "label": "Unable to leave the household; locked in when employer is absent", "confidence": "REPORTED"}
+    ],
+    "evidence_summary": "This case presents multiple serious reported indicators requiring urgent human review. The individual reports being physically confined in employer-controlled accommodation, with the accommodation locked when the employer is absent. Physical threats have been reported, with the individual stating they have been told they will be harmed if they attempt to leave. The individual's passport and phone are reported as being held by the employer. No wages have been received in three months. The individual made contact using a neighbour's phone after finding a brief opportunity. This situation warrants urgent safeguarding review by a qualified practitioner. This summary does not constitute a determination that trafficking has occurred."
+  },
+
+  "CASE-004": {
+    "indicator_hits": [
+      {"category": "wage_control_withholding", "label": "Overtime not calculated at correct rate; some hours not recorded", "confidence": "REPORTED"}
+    ],
+    "evidence_summary": "The individual reports concerns about overtime pay calculation and hour recording practices. No indicators of coercion, document confiscation, movement restriction, or threats are reported. The individual holds their own documents, lives independently, and is free to leave the employment. The concerns raised appear to relate to labour rights and employment standards rather than to indicators consistent with more serious safeguarding concerns. Human review is recommended to advise on appropriate referral to labour rights support. This summary does not constitute a legal determination."
+  },
+
+  "CASE-005": {
+    "indicator_hits": [
+      {"category": "debt_recruitment_pressure", "label": "Recruitment fee of approximately $4,800; monthly wage deductions of $380 described as travel advance repayment", "confidence": "REPORTED"},
+      {"category": "inability_to_leave_employment", "label": "Individual reports feeling unable to leave due to outstanding debt", "confidence": "POSSIBLE"}
+    ],
+    "evidence_summary": "The individual reports having incurred a recruitment fee of approximately $4,800 prior to arrival, with ongoing monthly deductions of $380 from wages described as repayment of a travel advance. The individual notes that this debt creates a practical constraint on their ability to change employment. The individual holds their own documents, lives independently, and reports no threats or coercion. The financial arrangement warrants further assessment to determine whether it meets legal standards for wage deductions and whether it constitutes an inappropriate debt-based control mechanism. Human review is recommended. This summary does not constitute a determination that trafficking or exploitation has occurred."
+  },
+
+  "CASE-006": {
+    "indicator_hits": [
+      {"category": "deception_regarding_work", "label": "Work materially different from what was promised at recruitment", "confidence": "REPORTED"},
+      {"category": "document_confiscation", "label": "Documents held by the intermediary who arranged the work", "confidence": "REPORTED"},
+      {"category": "restriction_of_movement", "label": "Cannot leave accommodation independently; movement monitored", "confidence": "REPORTED"},
+      {"category": "wage_control_withholding", "label": "Wages paid to intermediary rather than directly to the individual", "confidence": "REPORTED"},
+      {"category": "coercion_threats", "label": "Threatened with harm and with contact to family if they do not comply", "confidence": "REPORTED"},
+      {"category": "debt_recruitment_pressure", "label": "Debt claimed by intermediary for accommodation and travel costs", "confidence": "REPORTED"},
+      {"category": "inability_to_leave_employment", "label": "Individual is unable to refuse activities and cannot leave situation independently", "confidence": "REPORTED"}
+    ],
+    "evidence_summary": "This case presents multiple serious reported indicators across several risk categories that warrant priority human review. The individual reports that the nature of their work was materially different from what was described at recruitment. Their documents are reported as being held by an intermediary. Movement is restricted and monitored. Wages are reportedly paid to the intermediary rather than to the individual. Coercive threats involving harm and family contact have been reported as a means of enforcing compliance. A debt claimed by the intermediary is also reported. The individual has requested assistance in leaving the situation. Human review by a qualified practitioner is required before any action is taken. This summary does not constitute a determination that trafficking or any criminal act has occurred."
+  },
+
+  "CASE-007": {
+    "indicator_hits": [],
+    "evidence_summary": "Very limited information is available in this case. The individual appeared distressed when encountered by an outreach worker and asked for help but was unable or unwilling to share further details before leaving. A partial name and phone number were recorded, but the phone number is reported as disconnected. Employment context is unclear. No information is available about documentation, freedom of movement, wages, threats, or recruitment circumstances. Clarifying questions have been generated. A human reviewer should determine how the outreach worker might safely re-establish contact with the individual and gather the information needed for a substantive assessment."
+  },
+
+  "CASE-008": {
+    "indicator_hits": [],
+    "evidence_summary": "No risk indicators are present in the information reported. The individual is legally employed, holds their own documents, lives independently, moves freely, receives wages as agreed, and reports no threats, debt, or coercion of any kind. The individual has sought general advice about employment rights as a temporary worker, which is a normal and appropriate use of advice services. No indicators warrant further safeguarding assessment at this time. Human review is recommended to confirm and close the case, and to provide the general employment rights information the individual requested."
+  }
+}

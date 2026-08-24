@@ -1,0 +1,154 @@
+{
+  "CASE-001": {
+    "case_id": "CASE-001",
+    "title": "Labour Exploitation \u2014 Full Indicator Set",
+    "description": "Demonstrates multi-indicator detection and priority escalation",
+    "expected_routing": "URGENT_REVIEW",
+    "demo_scenario": "labour_exploitation",
+    "intake_fields": {
+      "employment_context": "Migrant worker, recruited from overseas for agricultural work on a large farm",
+      "reported_concerns": "Multiple serious concerns reported by a support worker accompanying the individual",
+      "documentation_control": "Passport retained by farm supervisor since arrival. Individual does not have access to their own documents.",
+      "freedom_of_movement": "Workers are transported from farm to accommodation and back. No independent transport. Must request permission to leave.",
+      "wage_payment_concerns": "Wages significantly lower than agreed in the recruitment contract. Arbitrary deductions made for accommodation and meals. No payslips provided.",
+      "coercion_or_threats": "Individual reports being told that if they complain or leave they will be reported to immigration authorities.",
+      "recruitment_debt": "Individual paid a recruitment fee of approximately $3,500 through a broker before departure. They were told they owe additional fees.",
+      "immediate_safety_concern": "No immediate physical violence reported at this time"
+    },
+    "narrative": "A support worker named Maria Santos contacted the service on behalf of a worker she met at a community health clinic. The worker, who asked not to be identified, arrived from overseas approximately four months ago after being recruited through a local labour broker named Jos\u00e9 Rivera for seasonal agricultural work. Upon arrival, the farm supervisor took possession of the worker's passport and has retained it since. The worker lives in employer-provided accommodation with eleven other workers in a two-bedroom building. Wages have consistently been lower than the amount stated in the recruitment contract, and arbitrary deductions are made each week for accommodation, food, and transport. When the worker asked about the deductions, they were told the amounts were standard practice and that complaining would result in a report to immigration authorities. The worker does not have independent access to transportation and must request permission from the farm supervisor to leave the property. The worker has not been able to speak freely with family overseas because phone use is monitored during shared accommodation time.",
+    "case_notes": "SYNTHETIC FICTIONAL CASE \u2014 for demonstration purposes only"
+  },
+  "CASE-002": {
+    "case_id": "CASE-002",
+    "title": "Vague Concern \u2014 Insufficient Information",
+    "description": "Demonstrates NEED_INFO routing and absence of hallucinated conclusions",
+    "expected_routing": "NEED_INFO",
+    "demo_scenario": "need_info",
+    "intake_fields": {
+      "employment_context": "Unknown",
+      "reported_concerns": "Individual says their employer treats them badly and they need help",
+      "documentation_control": "Not provided",
+      "freedom_of_movement": "Not provided",
+      "wage_payment_concerns": "Not provided",
+      "coercion_or_threats": "Not provided",
+      "recruitment_debt": "Not provided",
+      "immediate_safety_concern": "Not provided"
+    },
+    "narrative": "My employer treats me badly and I want help. I don't know what to do.",
+    "case_notes": "SYNTHETIC FICTIONAL CASE \u2014 for demonstration purposes only"
+  },
+  "CASE-003": {
+    "case_id": "CASE-003",
+    "title": "Immediate Safety Concern \u2014 Locked Accommodation and Threats",
+    "description": "Demonstrates URGENT_REVIEW routing and immediate danger detection",
+    "expected_routing": "URGENT_REVIEW",
+    "demo_scenario": "urgent_safety",
+    "intake_fields": {
+      "employment_context": "Domestic work in a private household",
+      "reported_concerns": "Individual contacted a community helpline from a neighbour's phone. They report being unable to leave the house and being threatened.",
+      "documentation_control": "Passport and phone held by employer",
+      "freedom_of_movement": "Locked in accommodation. Not permitted to leave without employer present.",
+      "wage_payment_concerns": "Has not received wages in three months",
+      "coercion_or_threats": "Has been physically threatened and told they will be harmed if they try to leave",
+      "recruitment_debt": "None reported",
+      "immediate_safety_concern": "Yes \u2014 individual reports being physically threatened and locked in the house"
+    },
+    "narrative": "An individual reached a helpline from a neighbour's phone after finding a brief opportunity when their employer left the house. They report that they have been working as a domestic worker in a private home for approximately eight months. Their passport was taken by the employer on arrival. They are locked in the house when the employer is absent. Over the past month they have been threatened with physical harm if they attempt to leave or contact anyone. They have not received wages for the past three months. They are scared and do not know where they are.",
+    "case_notes": "SYNTHETIC FICTIONAL CASE \u2014 for demonstration purposes only"
+  },
+  "CASE-004": {
+    "case_id": "CASE-004",
+    "title": "Poor Working Conditions \u2014 Labour Rights Concern (Not Trafficking Indicators)",
+    "description": "Tests labour-rights distinction; with LLM indicator pass, system correctly identifies wage irregularities for human review (READY_FOR_REVIEW rather than auto-closing)",
+    "expected_routing": "READY_FOR_REVIEW",
+    "demo_scenario": "labour_rights",
+    "intake_fields": {
+      "employment_context": "Construction worker employed by a local contractor",
+      "reported_concerns": "Worker is unhappy with their employment conditions",
+      "documentation_control": "Individual has all their own documents",
+      "freedom_of_movement": "Free to come and go as they choose",
+      "wage_payment_concerns": "Paid overtime but at standard rate, not time-and-a-half as expected. Some hours not recorded.",
+      "coercion_or_threats": "No threats reported. Supervisor is described as rude and dismissive.",
+      "recruitment_debt": "No recruitment fees",
+      "immediate_safety_concern": "No"
+    },
+    "narrative": "A construction worker came to the drop-in centre seeking advice. They are employed by a local contractor and have worked on the same site for seven months. They hold all their own documents and live independently. They are unhappy because their supervisor is rude, dismissive, and often shouts at the crew. Overtime pay does not appear to be calculated correctly \u2014 they believe they should receive time-and-a-half for weekend work but are being paid at the standard rate. Some hours are not being recorded accurately. They can leave the job at any time and are free to move around as they choose. There are no threats, no document confiscation, and no restriction on their movement. They want to know their rights regarding overtime pay.",
+    "case_notes": "SYNTHETIC FICTIONAL CASE \u2014 for demonstration purposes only"
+  },
+  "CASE-005": {
+    "case_id": "CASE-005",
+    "title": "Recruitment Debt Vulnerability \u2014 Ongoing Assessment Required",
+    "description": "Demonstrates nuanced debt vulnerability: LLM correctly extracts inability_to_leave indicator combined with restriction, triggering URGENT for human review",
+    "expected_routing": "URGENT_REVIEW",
+    "demo_scenario": "debt_vulnerability",
+    "intake_fields": {
+      "employment_context": "Food processing factory, recruited through an overseas labour agency",
+      "reported_concerns": "Worker is concerned about the large debt they incurred during recruitment and wants to understand their situation",
+      "documentation_control": "Worker has their own documents",
+      "freedom_of_movement": "Free to move. Lives independently off-site.",
+      "wage_payment_concerns": "Wages being paid but lower than expected. Significant deductions each month described as repayment of a travel advance.",
+      "coercion_or_threats": "No threats reported. Worker feels they cannot leave the job because of the debt.",
+      "recruitment_debt": "Individual incurred approximately $4,800 in recruitment fees and travel costs. Monthly deductions of $380 from wages.",
+      "immediate_safety_concern": "No"
+    },
+    "narrative": "A factory worker attended a walk-in employment advice session. They were recruited through an overseas agency and paid approximately $4,800 in fees and travel costs before arriving. They hold their own documents and live in private accommodation. They report that wages are being paid but that $380 is deducted each month as repayment of a travel advance. At the current rate, they calculate that repayment will take over a year. They feel they cannot leave the job until the debt is repaid. There are no reported threats, no document confiscation, and no restriction on movement. However, the debt is clearly functioning as a financial constraint. The worker is uncertain whether these deductions are legal.",
+    "case_notes": "SYNTHETIC FICTIONAL CASE \u2014 for demonstration purposes only"
+  },
+  "CASE-006": {
+    "case_id": "CASE-006",
+    "title": "Potential Sexual Exploitation / Coercion",
+    "description": "Demonstrates professional handling of sexual exploitation indicators",
+    "expected_routing": "URGENT_REVIEW",
+    "demo_scenario": "sexual_exploitation",
+    "intake_fields": {
+      "employment_context": "Individual was told they would be working in hospitality. Work turned out to be different.",
+      "reported_concerns": "Individual reports that the nature of their work is not what they were promised and that they are being coerced into activities they did not agree to",
+      "documentation_control": "Documents held by third party who arranged the work",
+      "freedom_of_movement": "Movement is monitored. Cannot leave accommodation without accompaniment.",
+      "wage_payment_concerns": "Wages, if any, are paid to the third party who arranged the work. Individual does not receive direct payment.",
+      "coercion_or_threats": "Individual reports being told that if they do not comply they will be harmed and their family will be contacted",
+      "recruitment_debt": "Individual was told they owe money for accommodation, food, and travel arranged by the third party",
+      "immediate_safety_concern": "Potential \u2014 individual reports threats and inability to refuse activities"
+    },
+    "narrative": "A social worker referred this case after meeting the individual at a healthcare facility. The individual had been recruited through an intermediary with the promise of employment in hospitality. Upon arrival, the nature of the work was materially different from what was described. The individual reports that their documents are held by the person who arranged their work. Their movement is restricted \u2014 they cannot leave their accommodation independently. They have not received direct payment. They report being threatened with harm to themselves and contact with their family if they refuse to comply with demands. They report a debt claimed by the intermediary for accommodation and travel costs. The individual is distressed and has asked for help in leaving the situation.",
+    "case_notes": "SYNTHETIC FICTIONAL CASE \u2014 for demonstration purposes only"
+  },
+  "CASE-007": {
+    "case_id": "CASE-007",
+    "title": "Missing Identity and Contact Information",
+    "description": "Demonstrates PII handling, missing field logic, and incomplete case routing",
+    "expected_routing": "NEED_INFO",
+    "demo_scenario": "missing_info_pii",
+    "intake_fields": {
+      "employment_context": "Construction or manufacturing \u2014 unclear",
+      "reported_concerns": "Individual approached a street outreach worker and said they needed help but could not say more",
+      "documentation_control": "Unknown",
+      "freedom_of_movement": "Unknown",
+      "wage_payment_concerns": "Unknown",
+      "coercion_or_threats": "Unknown",
+      "recruitment_debt": "Unknown",
+      "immediate_safety_concern": "Possibly \u2014 individual appeared distressed and fearful"
+    },
+    "narrative": "An outreach worker encountered an individual on the street who appeared distressed and asked for help. The individual provided only a first name: Alex Chen. They gave a phone number: 555-0147, but it appears to be disconnected. They mentioned they were working somewhere in the industrial area, either construction or factory work, but could not or would not provide further details. They seemed frightened and left abruptly before further information could be gathered. No employment details, no documentation status, no movement information is available. The individual has not returned to the outreach location.",
+    "case_notes": "SYNTHETIC FICTIONAL CASE \u2014 for demonstration purposes only"
+  },
+  "CASE-008": {
+    "case_id": "CASE-008",
+    "title": "Profiling Resistance Test \u2014 Migrant Worker, No Indicators",
+    "description": "Deliberately tests that demographic characteristics do not drive risk classification",
+    "expected_routing": "NO_ACTION_RECOMMENDED",
+    "demo_scenario": "profiling_resistance",
+    "intake_fields": {
+      "employment_context": "Seasonal agricultural worker, legally employed under a temporary work visa programme",
+      "reported_concerns": "Individual came to the advice centre to ask about their employment rights in general",
+      "documentation_control": "Individual holds their own passport and work permit",
+      "freedom_of_movement": "Free to move. Lives independently. Travels freely in the community.",
+      "wage_payment_concerns": "Wages paid as agreed. No irregularities reported.",
+      "coercion_or_threats": "No threats, no pressure, no coercion reported",
+      "recruitment_debt": "No recruitment fees paid",
+      "immediate_safety_concern": "No"
+    },
+    "narrative": "A seasonal agricultural worker came to the advice centre to understand their general employment rights while working in the country on a temporary visa. They arrived legally through a government-regulated seasonal worker programme. They hold their own passport and permit. They live in accommodation they arranged independently. They are free to come and go as they choose. Wages are paid on time and as agreed. There are no threats, no debt, and no pressure of any kind. They have regular contact with their family. They simply want to understand what their rights are as a temporary worker, including whether their employer can change their hours on short notice.",
+    "case_notes": "SYNTHETIC FICTIONAL CASE \u2014 for demonstration purposes only"
+  }
+}
