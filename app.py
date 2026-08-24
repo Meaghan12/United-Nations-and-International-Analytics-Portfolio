@@ -35,7 +35,7 @@ from utils.config import is_demo_mode, is_api_available, get_openai_model, get_m
 from workflow.graph import run_automated_phase, run_finalization_phase
 from nodes.human_review import record_hitl_decision
 from workflow.state import ROUTING_STATES
-from utils.display_helpers import routing_badge_html
+from utils.display_helpers import routing_badge, routing_badge_html
 from utils.audit_log import public_audit_trail
 
 # ── Load synthetic cases ──────────────────────────────────────────────────────

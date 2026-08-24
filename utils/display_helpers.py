@@ -46,6 +46,10 @@ def routing_badge(routing_state: str) -> str:
     )
 
 
+# Alias for backward compatibility
+routing_badge_html = routing_badge
+
+
 def severity_badge(severity: str) -> str:
     """Return styled HTML badge for severity level."""
     color = SEVERITY_COLORS.get(severity, "#95A5A6")
